@@ -32,7 +32,7 @@ body {
   padding: 3rem;
 }
 
-.card-title {
+.first-sec__title {
   margin-bottom: 2rem;
   font-weight: 700;
   font-size: 2.4rem;
@@ -43,7 +43,7 @@ body {
   color: hsl(277, 64%, 61%);
 }
 
-.description {
+.first-sec__description {
   color: hsla(0, 0%, 100%, 0.75);
   margin-bottom: 4rem;
   font-size: 1.2rem;
@@ -70,16 +70,11 @@ body {
   font-weight: 400;
 }
 .second-sec {
-  background-image: url("./images/image-header-desktop.jpg");
+  background-image: linear-gradient(hsl(277, 64%, 61%), hsl(277, 64%, 61%)),
+    url("./images/image-header-desktop.jpg");
+  background-blend-mode: multiply;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 0px 5px 5px 0px;
   position: relative;
-}
-
-.overlay {
-  position: absolute;
-  background-color: hsla(277, 87%, 32%, 0.58);
-  border-radius: 0px 5px 5px 0px;
-  inset: 0px;
 }

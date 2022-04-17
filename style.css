@@ -19,6 +19,7 @@ body {
 .card {
   margin: 10rem auto;
   max-width: 70rem;
+  height: 30rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 0.5rem;

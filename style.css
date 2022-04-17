@@ -18,18 +18,15 @@ body {
 
 .card {
   margin: 10rem auto;
-  width: 700px;
+  max-width: 70rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 0.5rem;
 }
 
-.dark-background {
-  background-color: hsl(244, 38%, 16%);
-}
-
 .first-sec {
   padding: 3rem;
+  background-color: hsl(244, 38%, 16%);
 }
 
 .first-sec__title {
@@ -77,4 +74,29 @@ body {
   background-repeat: no-repeat;
   border-radius: 0px 5px 5px 0px;
   position: relative;
+}
+
+/********* Responsive Design *************/
+@media (max-width: 44em) {
+  .card {
+    padding: 0 2.4rem;
+  }
+}
+
+@media (max-width: 37em) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .first-sec {
+    padding: 2.4rem;
+    text-align: center;
+  }
+  .company-stats-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-sec {
+    grid-row: 1;
+    height: 25rem;
+  }
 }
